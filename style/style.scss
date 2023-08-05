@@ -1,0 +1,210 @@
+// VARS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// GLOBAL
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+
+    height: 100%;
+    
+    background: linear-gradient(to top, #143864, #104280);
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+input {
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid #F0F0F0;
+    // background: #586476;
+    background: #F0F0F0;
+    border-radius: 12px;
+    // color: #fff;
+    padding: 15px 15px;
+    max-width: 100%;
+    width: 100%;
+
+    &::placeholder {
+        // color: #fff;
+    }
+    &:focus {
+        outline: 2px solid #adf0d1;
+    }
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 20px;
+    background: #adf0d1;
+    color: #000;
+    border-radius: 50px;
+}
+
+
+
+
+
+// SECTION-1
+
+.section-1 {
+
+}
+
+.pay {
+    // .pay__wrapper
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        max-width: 600px;
+        width: 100%;
+
+        margin: 40px auto;
+        padding: 50px;
+        border-radius: 20px;
+        background: #fff;
+    }
+    // .pay__title
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+    }
+    // .pay__text
+    &__text {
+        font-size: 18px;
+    }
+    // .pay__warn
+    &__warn {
+        color:#c5882c;
+    }
+    // .pay__btn
+    &__btn {
+    }
+    // .pay__qrcode
+    &__qrcode {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        img {
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+
+        }
+    }
+    // .pay__qrcode-text
+    &__qrcode-text {
+        text-align: center;
+        color: #104280;
+        display: block;
+        margin: 0 auto;
+    }
+    // .pay__or
+    &__or {
+        display: flex;
+        align-items: center;
+        display: block;
+        text-align: center;
+
+        background: #fff;
+        z-index: 5;
+
+        position: relative;
+        &::after {
+            font-family: 'Ubuntu', sans-serif;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 100%;
+            height: 1px;
+            background: rgb(158, 158, 158);
+
+        }
+        &::before {
+            font-family: 'Ubuntu', sans-serif;
+            content: "or";
+            color: #000;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: auto;
+            width: 40px;
+            height: 20px;
+            background: #fff;
+        }
+    }
+    // .pay__input
+    &__input {
+    }
+    // .pay__input-top
+    &__input-top {
+        padding-bottom: 10px;
+    }
+    // .pay__input-title
+    &__input-title {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    // .pay__input-inner
+    &__input-inner {
+        display: flex;
+        align-items: stretch;
+        gap: 8px;
+    }
+    // .pay__input-copy
+    &__input-copy {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4px;
+        padding: 4px 10px;
+        font-size: 12px;
+        border-radius: 12px;
+
+
+        img {
+            max-width: 24px;
+            width: 100%;
+        }
+    }
+    // .pay__bottom
+    &__bottom {
+        font-size: 16px;
+        color: gray;
+        text-align: center;
+    }
+}
+

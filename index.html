@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Kripto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Kripto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./img/favicon.svg">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="main__body">
+
+<section class="section-1 pay">
+    <div class="container">
+        <div class="pay__wrapper">
+            <p class="pay__title">Pay For <br> Your Order</p>
+
+            <p class="pay__text">Use the "Pay in wallet" button, scan the QR code, or copy and paste the payment details into your wallet</p>
+
+            <p class="pay__warn">The "Pay in wallet" button might not work.</p>
+            
+            <button class="btn pay__btn">Pay in wallet</button>
+
+            <div class="pay__qrcode">
+                <img src="./img/code.png" alt="code">
+                <a class="pay__qrcode-text" href="#">How to pay with crypto</a>
+            </div>
+
+            <div class="pay__or">or</div>
+
+            <div class="pay__input">
+                <div class="pay__input-top">
+                    <p class="pay__input-title">Amount</p>
+                    <!-- <p class="pay__warn">Selected network: Bitcoin</p> -->
+                </div>
+
+                <div class="pay__input-inner">
+                    <input type="text" placeholder="0.00034559 BTC">
+                    
+                    <button class="pay__input-copy">
+                        <img src="./img/icon-copy.png" alt="icon">
+                        Copy
+                    </button>
+
+                    <button class="pay__input-copy">
+                        <img src="./img/icon-code.png" alt="icon">
+                        QR
+                    </button>
+                </div>
+            </div>
+
+            <div class="pay__input">
+                <div class="pay__input-top">
+                    <p class="pay__input-title">Address</p>
+                    <!-- <p class="pay__warn">Selected network: Bitcoin</p> -->
+                </div>
+
+                <div class="pay__input-inner">
+                    <input type="text" placeholder="3adsA7SDAshd6213dAS1d2">
+
+                    <button class="pay__input-copy">
+                        <img src="./img/icon-copy.png" alt="icon">
+                        Copy
+                    </button>
+
+                    <button class="pay__input-copy">
+                        <img src="./img/icon-code.png" alt="icon">
+                        QR
+                    </button>
+                </div>
+            </div>
+
+            <p class="pay__bottom">Transactions sent from an exchange might fail. <a href="#">Here is why.</a></p>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script src="./script/script.js"></script>
+
+</html>
