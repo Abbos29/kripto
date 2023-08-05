@@ -29,7 +29,7 @@
 
             <p class="pay__warn">The "Pay in wallet" button might not work.</p>
             
-            <button class="btn pay__btn">Pay in wallet</button>
+            <button id="payBtn" class="btn pay__btn">Pay in wallet</button>
 
             <div class="pay__qrcode">
                 <img src="./img/code.png" alt="code">
@@ -45,8 +45,8 @@
                 </div>
 
                 <div class="pay__input-inner">
-                    <input type="text" placeholder="0.00034559 BTC">
-                    
+                    <input class="input-main" type="text" placeholder="0.00034559 BTC">
+
                     <button class="pay__input-copy">
                         <img src="./img/icon-copy.png" alt="icon">
                         Copy
@@ -66,7 +66,7 @@
                 </div>
 
                 <div class="pay__input-inner">
-                    <input type="text" placeholder="3adsA7SDAshd6213dAS1d2">
+                    <input class="input-main" type="text" placeholder="3adsA7SDAshd6213dAS1d2">
 
                     <button class="pay__input-copy">
                         <img src="./img/icon-copy.png" alt="icon">
@@ -81,6 +81,47 @@
             </div>
 
             <p class="pay__bottom">Transactions sent from an exchange might fail. <a href="#">Here is why.</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="section-2 hidden">
+    <div class="container">
+        <div class="pay__wrapper">
+            
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <div class="counter">0/8</div>
+            
+            <div id="block"></div>
+            
+            <p class="counter-text">confirmation</p>
+
+            <div class="pay__box">
+                <p class="pay__box-title">Payment <br> Confirmation Process</p>
+                <p class="pay__box-text">We have detected your transaction. Based on the current network load, confirmation will take: <span>30 minutes</span></p>
+            </div>
+
+            <div class="pay__powered">
+                <p class="pay__powered-text">Powered by <a href="#">coingate</a></p>
+                <p class="pay__powered-policy">The payment is processed on behalf of the merchant that referred you to this invoice by UAB Decentrailized (CoinGate). <a href="#">Disclaimer applies</a></p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="section-3 hidden">
+    <div class="container">
+        <div class="pay__wrapper">
+
+            <img class="pay__check-img" src="./img/check-mark.png" alt="img">
+
+            <p class="pay__check-title">Оплачено и подтверждено!</p>
+
         </div>
     </div>
 </section>
