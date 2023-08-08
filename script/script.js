@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
   var payBtn = document.getElementById("payBtn");
 
   function updateProgressBar() {
-    var width = (count / 8) * 100;
+    var width = (count / 1) * 100;
     progress.style.width = width + "%";
-    counter.textContent = count + "/8";
+    counter.textContent = count + "";
     
-    if (count === 8) {
+    if (count === 1) {
       clearInterval(timer);
       setTimeout(function() {
         document.querySelector(".section-2").classList.add("hidden");
