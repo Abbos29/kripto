@@ -21,7 +21,7 @@ input {
   width: 100%;
 }
 input:focus {
-  outline: 2px solid #adf0d1;
+  outline: none;
 }
 
 .container {
