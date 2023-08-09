@@ -1,25 +1,42 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var progress = document.querySelector(".progress");
-  var counter = document.querySelector(".counter");
-  var count = 1;
-  var interval = 30 / 8;
-  var timer = null;
-  var payBtn = document.getElementById("payBtn");
+  let progress = document.querySelector(".progress");
+  let counter = document.querySelector(".counter");
+  let count = 1;
+  let interval = 30 / 8;
+  let timer = null;
+  let payBtn = document.getElementById("payBtn");
+  let number = 0
 
   function updateProgressBar() {
-    var width = (count / 1) * 100;
-    progress.style.width = width + "%";
+    // let width = (count / 1) * 100;
+    // progress.style.width = width + "%";
     counter.textContent = count + "";
     
-    if (count === 1) {
+    if (count === 5) {
       clearInterval(timer);
       setTimeout(function() {
         document.querySelector(".section-2").classList.add("hidden");
         document.querySelector(".section-3").classList.remove("hidden");
       }, 3000);
     }
+
+    // for(let i = 0; i < count; i++){
+    //   number = i
+    // }
+
+    // if(number > count){
+    //   progress.style.width = "0%";
+    // }
     
     count++;
+
+    // setTimeout(()=>{
+    //   // let width = (count / 1) * 100;
+    //   progress.style.width = "0%";
+    // }, (interval / count) * 2000)
+
+  //  cb()
+    
   }
 
   // Добавляем обработчик события на нажатие кнопки payBtn
@@ -31,10 +48,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Добавляем 8 белых полосок в блок
-var block = document.getElementById("block");
-for (var i = 0; i < 7; i++) {
-  var divider = document.createElement("div");
-  divider.className = "divider";
-  block.appendChild(divider);
-}
+// // Добавляем 8 белых полосок в блок
+// let block = document.getElementById("block");
+// for (let i = 0; i < 7; i++) {
+//   let divider = document.createElement("div");
+//   divider.className = "divider";
+//   block.appendChild(divider);
+// }

@@ -323,7 +323,19 @@ input {
   width: 0%;
   height: 100%;
   background-color: #104280;
-  transition: width 3s linear;
+//   transition: width 3s linear;
+animation: fillProgress 3.8s infinite ease-in;
+}
+
+@keyframes fillProgress {
+  0% {
+    width: 0%;
+    // background-color: transparent;
+  }
+  100% {
+    width: 100%;
+    background-color: #104280;
+  }
 }
 
 .counter {
