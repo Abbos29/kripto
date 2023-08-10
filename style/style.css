@@ -320,7 +320,7 @@ input:focus {
 }
 .wait .counter {
   position: relative;
-  top: -150px;
+  top: 0px;
   text-align: center;
   font-size: 50px;
   font-weight: 600;
