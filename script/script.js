@@ -51,6 +51,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
+  var copyButton = document.querySelector("#copy1");
+  var inputField = document.querySelector("#copy11");
+  var copyButton2 = document.querySelector("#copy2");
+  var inputField2 = document.querySelector("#copy22");
+
+  copyButton.addEventListener("click", function() {
+    var placeholderText = inputField.getAttribute("placeholder");
+    placeholderText = placeholderText.slice(0, -3);
+    navigator.clipboard.writeText(placeholderText);
+  });
+
+  copyButton2.addEventListener("click", function() {
+    var placeholderText = inputField2.getAttribute("placeholder");
+    navigator.clipboard.writeText(placeholderText);
+  });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
   var toggle1 = document.getElementById("toggle1");
   var toggle2 = document.getElementById("toggle2");
   var toggle3 = document.getElementById("toggle3");
