@@ -8,8 +8,10 @@ body {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
+  position: relative;
   height: 100%;
-  background: linear-gradient(90deg, rgb(20, 56, 100), rgb(42, 100, 172));
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
 }
 
 input {
@@ -53,6 +55,7 @@ input:focus {
   padding: 50px;
   border-radius: 20px;
   background: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 @media (max-width: 480px) {
   .pay__wrapper {
@@ -264,11 +267,64 @@ input:focus {
     background-color: #104280;
   }
 }
+.counter {
+  position: relative;
+  top: -170px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+
 .counter-text {
   font-size: 16px;
   text-align: center;
   position: relative;
   top: -180px;
+}
+
+.section-2 .pay__title {
+  text-align: center;
+  font-size: 26px;
+  padding-top: 30px;
+}
+
+.wait .progress-bar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  position: relative;
+  border: 4px solid #fff;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 4px 4px 8px 5px rgba(34, 60, 80, 0.2);
+}
+.wait .progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border-radius: 50%;
+}
+.wait .progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  width: 100px;
+  height: 100px;
+  background-image: none;
+}
+.wait .counter {
+  position: relative;
+  top: -150px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  z-index: 3;
 }
 
 #block {
@@ -318,4 +374,31 @@ input:focus {
   height: 100%;
   background-color: white;
   position: absolute;
+}
+
+.toggle {
+  position: relative;
+  bottom: 25px;
+}
+.toggle__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 20px;
+}
+.toggle__btn {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(60, 60, 135);
+  box-shadow: 4px 4px 8px 2px rgba(34, 60, 80, 0.3);
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */
