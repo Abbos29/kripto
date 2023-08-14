@@ -50,24 +50,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   var copyButton = document.querySelector("#copy1");
+//   var inputField = document.querySelector("#copy11");
+//   var copyButton2 = document.querySelector("#copy2");
+//   var inputField2 = document.querySelector("#copy22");
+
+//   copyButton.addEventListener("click", function() {
+//     var placeholderText = inputField.getAttribute("placeholder");
+//     placeholderText = placeholderText.slice(0, -3);
+//     navigator.clipboard.writeText(placeholderText);
+//   });
+
+//   copyButton2.addEventListener("click", function() {
+//     var placeholderText = inputField2.getAttribute("placeholder");
+//     navigator.clipboard.writeText(placeholderText);
+//   });
+// });
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
   var copyButton = document.querySelector("#copy1");
-  var inputField = document.querySelector("#copy11");
+  var textElement = document.querySelector("#copy11");
   var copyButton2 = document.querySelector("#copy2");
-  var inputField2 = document.querySelector("#copy22");
+  var textElement2 = document.querySelector("#copy22");
 
   copyButton.addEventListener("click", function() {
-    var placeholderText = inputField.getAttribute("placeholder");
-    placeholderText = placeholderText.slice(0, -3);
-    navigator.clipboard.writeText(placeholderText);
+    var textToCopy = textElement.textContent;
+    navigator.clipboard.writeText(textToCopy);
   });
 
   copyButton2.addEventListener("click", function() {
-    var placeholderText = inputField2.getAttribute("placeholder");
-    navigator.clipboard.writeText(placeholderText);
+    var textToCopy = textElement2.textContent;
+    navigator.clipboard.writeText(textToCopy);
   });
 });
-
 
 
 

@@ -27,6 +27,22 @@ input:focus {
   outline: none;
 }
 
+.input-main {
+  font-family: "Ubuntu", sans-serif;
+  border: 1px solid #F0F0F0;
+  background: #F0F0F0;
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 13px 15px;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .input-main {
+    font-size: 11px;
+  }
+}
+
 .container {
   max-width: 900px;
   width: 100%;
@@ -143,7 +159,7 @@ input:focus {
   border-radius: 12px;
 }
 .pay__input-copy img {
-  max-width: 24px;
+  max-width: 21px;
   width: 100%;
 }
 .pay__bottom {
