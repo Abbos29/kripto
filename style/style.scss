@@ -214,14 +214,14 @@ input {
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
-        gap: 4px;
-        padding: 4px 10px;
+        // gap: 4px;
+        padding: 6px 10px;
         font-size: 12px;
         border-radius: 12px;
 
 
         img {
-            max-width: 21px;
+            max-width: 19px;
             width: 100%;
         }
     }
